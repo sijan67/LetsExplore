@@ -71,7 +71,7 @@ const updateLikeCount = async (projectId, username, isLiked) => {
     try {
       // TO DO: make username dynamic 
 
-      const updatedLikeCount = await updateLikeCount(post.id, "admin", !isLiked);
+      const updatedLikeCount = true;
 
       if (updatedLikeCount) {
         // Update the like count state
