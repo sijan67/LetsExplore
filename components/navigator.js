@@ -31,7 +31,7 @@ const theme = {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      secondaryContainer: "#2D9CDB",
+      secondaryContainer: "#54926f",
     },
 };
 

@@ -227,7 +227,7 @@ export default function Dashboard() {
 
         {isRefreshing && <ActivityIndicator size="large" color="#0000ff" />}
       
-        <View style={{backgroundColor: "#D9E2E7", borderRadius: 30, padding: 20, margin: 10}}>
+        <View style={{backgroundColor: "#bedaca", borderRadius: 30, padding: 20, margin: 10}}>
           <View style={{flexDirection: 'row',}}>
           <Text> Title </Text>
           <TextInput
@@ -250,7 +250,7 @@ export default function Dashboard() {
 
           
         <TextInput
-          placeholder="What's your project / start up idea ? "
+          placeholder="What's your activity idea ? "
           value={newPost.idea}
           onChangeText={(text) => setNewPost({ ...newPost, idea: text })}
           style={{marginTop: 15, fontSize: 20 , textAlign: 'center' }}

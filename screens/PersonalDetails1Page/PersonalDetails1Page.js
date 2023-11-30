@@ -37,7 +37,7 @@ function PersonalDetails1() {
         }}
       />
    
-      <Text style={style.inputHeader}> Activity Frequency per month *</Text>
+      <Text style={style.inputHeader}> How often do you go out per month ? *</Text>
       <View style={style.numericalInput}>
         <TouchableOpacity onPress={() => setExperience(experience - 1)}>
           <AntDesign name="stepbackward" size={24} color="black" />
