@@ -47,7 +47,7 @@ const postsData = [
     id: "2cd87936-07be-4626-99e7-d3c468296aab",
     image: "https://files.nccih.nih.gov/yoga-gettyimages-1204500395-16-9.jpg",
     likesCount: 1,
-    title: "Dodgeball Tournament",
+    title: "Yoga Class",
   },
   {
     author: users[2],
@@ -56,7 +56,7 @@ const postsData = [
     id: "2cd87936-07be-4626-99e7-d3c468296aab",
     image: "https://media.yourschoolgames.com/images/Dodgeball_School_Games_1.width-550.png",
     likesCount: 1,
-    title: "Fundraiser: Donuts Sale",
+    title: "Dodgeball Tournamen",
   },
   {
     author: users[3],
