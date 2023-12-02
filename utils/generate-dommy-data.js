@@ -67,6 +67,44 @@ const postsData = [
     likesCount: 1,
     title: "Chill Night with NBA",
   },
+  {
+    author: users[4],
+    content:"Join forces with fellow nature lovers this Saturday at River Park for a community cleanup day! Let’s keep our city green and clean. Gloves and bags will be provided. See you at 8 AM by the main entrance.",
+    createdAt: "2023-11-30T15:55:40.254Z",
+    id: "dd1f5ae8-ddf6-44cd-b686-49ca4199a961",
+    image:"https://thecatalinaislander.com/wp-content/uploads/2021/04/CLEAN.jpg",
+    likesCount: 2,
+    title: "Community Cleanup Day",
+  },
+  {
+    author: users[5],
+    content:"Fancy a game of chess? Whether you're a grandmaster or a beginner, come down to Liberty Square this Sunday at 11 AM for Chess in the Park. Boards provided, and fun guaranteed!",
+    createdAt: "2023-11-30T15:55:40.254Z",
+    id: "dd1f5ae8-ddf6-44cd-b686-49ca4199a961",
+    image:"https://www.centralpark.com/downloads/10680/download/Chess-in-the-Park-Photo-Erik-Bardin.jpg?cb=888f2af6b62d7d2b2f5caea62625c420",
+    likesCount: 2,
+    title: "Chess in the Park",
+  },
+  {
+    author: users[6],
+    content:"Explore the cosmos with us! We’re hosting a stargazing night on Hilltop Field this Friday starting at 9 PM. Telescopes will be available, and an expert will guide us through the constellations.",
+    createdAt: "2023-11-30T15:55:40.254Z",
+    id: "dd1f5ae8-ddf6-44cd-b686-49ca4199a961",
+    image:"https://www.nps.gov/arch/planyourvisit/images/star-party-light-saber-1000w.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
+    likesCount: 2,
+    title: "Stargazing Night",
+  },
+  {
+    author: users[3],
+    content:"Content: Coders unite for a weekend hackathon to solve social issues! Prizes for the best solutions. Sign up alone or with a team. Food and drinks on us. Hack starts online at 10 AM, July 3rd. Details on our website.",
+    createdAt: "2023-11-30T15:55:40.254Z",
+    id: "dd1f5ae8-ddf6-44cd-b686-49ca4199a961",
+    iamge:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40geetika_keim%2Fstay-updated-about-upcoming-hackathons-and-tech-events-90d151c72942&psig=AOvVaw1FNSaGaYfRoHpR1gLF7BO7&ust=1701506425519000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMC9r8Lr7YIDFQAAAAAdAAAAABAE",
+    likesCount: 2,
+    title: "Hackathon for Good",
+  },
+
+
   // Add more post data as needed
 ];
 
