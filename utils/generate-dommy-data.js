@@ -7,6 +7,11 @@ const users = [
   { id: "2", name: "uof_official", photo: "https://static01.nyt.com/images/2016/12/02/well/move/yoga_body_images-slide-NY4R/yoga_body_images-slide-NY4R-facebookJumbo-v2.jpg", skills: "Yoga" },
   { id: "3", name: "ATHELTE_Union", photo: "https://i.pinimg.com/736x/5a/15/65/5a15659ddc90a2f30335d078b755cc23.jpg", skills: "Dodgeball" },
   { id: "4", name: "res-search", photo: "https://pbs.twimg.com/profile_images/1392258537993211905/kYxkTjiE_400x400.jpg", skills: "Basketball" },
+  { id: "5", name: "eco_warrior", photo: "https://www.signupgenius.com/cms/images/nonprofit/volunteer-opportunities-ideas-article-600x400.jpg", skills: "Basketball" },
+  { id: "6", name: "chessmaster_98", photo: "https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/Y0mAruESDwFn4MO5GbYyr/f898df53e63d503d63321d8aea34fdf8/GettyImages-947895170.jpg?fit=thumb", skills: "Basketball" },
+  { id: "7", name: "starry_nights", photo: "https://i.pinimg.com/736x/93/74/50/937450613fe9baac46d94947ebc709d7.jpg", skills: "Basketball" },
+  { id: "8", name: "code_crafter", photo: "https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png", skills: "Basketball" },
+
 ];
 
 function createSpecificPost(postData) {
@@ -95,11 +100,11 @@ const postsData = [
     title: "Stargazing Night",
   },
   {
-    author: users[3],
+    author: users[7],
     content:"Content: Coders unite for a weekend hackathon to solve social issues! Prizes for the best solutions. Sign up alone or with a team. Food and drinks on us. Hack starts online at 10 AM, July 3rd. Details on our website.",
     createdAt: "2023-11-30T15:55:40.254Z",
     id: "dd1f5ae8-ddf6-44cd-b686-49ca4199a961",
-    iamge:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40geetika_keim%2Fstay-updated-about-upcoming-hackathons-and-tech-events-90d151c72942&psig=AOvVaw1FNSaGaYfRoHpR1gLF7BO7&ust=1701506425519000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMC9r8Lr7YIDFQAAAAAdAAAAABAE",
+    image:"https://img.freepik.com/free-vector/hackathon-doodle-hand-drawing-team-programmers-web-developers-managers-graphic-designers-deve_88138-1348.jpg",
     likesCount: 2,
     title: "Hackathon for Good",
   },
