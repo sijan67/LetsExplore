@@ -11,6 +11,7 @@ import DateOfBirth from '../screens/DateOfBirthPage/DateOfBirthPage';
 import PersonalDetails1 from '../screens/PersonalDetails1Page/PersonalDetails1Page';
 import PersonalDetails2 from '../screens/PersonalDetails2Page/PersonalDetails2Page';
 import UploadPicture from '../screens/UploadPicturesPage/UploadPicturePage';
+import VerifyCard from '../screens/VerifyCardPage/UploadPicturePage';
 import { PostProvider } from '../context/post-context';
 
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
@@ -77,6 +78,7 @@ export default function Navigator() {
         <Stack.Screen name='PersonalDetails1' component={PersonalDetails1} options={{headerShown: false}}/>
         <Stack.Screen name='PersonalDetails2' component={PersonalDetails2} options={{headerShown: false}}/>
         <Stack.Screen name="UploadPicture" component={UploadPicture} options={{headerShown: false}}/>
+        <Stack.Screen name="VerifyCard" component={VerifyCard} options={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Home} options={{
               headerShown: false, // Hide the title of the Home screen
             }}/>

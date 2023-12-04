@@ -35,7 +35,10 @@ function UploadPicture() {
     //     navigation.navigate("Login")
     //   }).catch(error => console.log(error))
     // })
-    navigation.navigate("Login")
+    // navigation.navigate("Login")
+    navigation.navigate("VerifyCard", {
+      username: username
+    })
   }
   return (
   <SafeAreaView style={style.container}>
