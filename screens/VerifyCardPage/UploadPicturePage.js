@@ -5,9 +5,12 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import style from './style';
 import * as ImagePicker from 'expo-image-picker';
 import { addUserPicture } from '../../api/UserAPI';
+import { showMessage } from 'react-native-flash-message'
 
 function VerifyCard() {
   const [image, setImage] = useState('');
+  const [attemptCount, setAttemptCount] = useState(0); // New state for attempt count
+  const [alert, setAlert] = useState('');
   const navigation = useNavigation();
   const route = useRoute();
   const { username } = route.params;
@@ -22,11 +25,19 @@ function VerifyCard() {
 
     if (!result.canceled) {
       setImage(result.assets[0].uri);
+      setAttemptCount(attemptCount + 1); // Increment attempt count on successful image pick
+      if (attemptCount<2){
+          showMessage({
+        message: 'Verification failed. Try uploading student ID again.',
+        type:'danger'
+      })
+      }
     }
   };
 
   const onDone = () => {
-    if (image) {
+    if (image && attemptCount >= 3) {
+      // Only allow navigation when image is selected and attemptCount is 3 or more
       // FileSystem.readAsStringAsync(image, {encoding: FileSystem.EncodingType.Base64})
       // .then(res => {
       //   addUserPicture(username, 'data:image/png;base64,' + res)
@@ -57,9 +68,9 @@ function VerifyCard() {
           <Feather name="arrow-left-circle" size={40} color="black" />
         </TouchableOpacity>
         <TouchableOpacity
-          style={[style.button, !image && { opacity: 0.5 }]}
+          style={[style.button, attemptCount < 3 && { opacity: 0.5 }]}
           onPress={() => onDone()}
-          disabled={!image}
+          disabled={ attemptCount < 3} // Disable button until attemptCount is 3 or more
         >
           <Text style={style.buttonText}>Done</Text>
         </TouchableOpacity>
